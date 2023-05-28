@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Ma’lumot tiplari."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Dasturda biror ma’lumotni saqlash va qayta ishlashda har bir ma’lumot ma’lumot qaydaydir tipda saqlanadi. C++ da sonlarni saqlash uchun birnechta ma’lumot tiplari mavjud. Sonlar 2 xil bo’lishi mumkin: butun va haqiqiy sonlar. "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="C++ da son tiplari:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Butun sonlar uchun unsigned  (ishorasiz) faqat manfiy bo’lmagan sonlarni saqlash uchun hizmat qiladi."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="O’zgaruvchini nomlash. "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="O’zgaruvchilar bilan ishlash uchun ularning har biriga alohida nom berish lozim. O’zgaruvchini nomlashda uning maqsadini tushintirib beradigan ingliz tilida nom qo’yish lozim. Masalan  kub hajmining qiymatini saqlaydigan o’zgaruvchini cube_volume deb nomlagan maqsadga muvofiq.
+C++ da o’zgaruvchini nomlashda bir nechta qoidalar mavjud:
+1. O’zgaruvchi nomi harf yoki pastki chiziq(_) belgisi bilan boshlanishi kerak va harflar, raqamlar va pastki chiziq belgisidan iborat bo’lishi lozim.
+2. Boshqa belgilarni, masalan . yoki % qo’llash mumkin emas. Probel ham qatnashmasligi lozim. Ma’noga ega qismlari bir-biridan cube_volume ga o’xshab  pastki chiziqcha bilan ajratilishi lozim. Masalancan_volume.
+3. O’zgaruvchini nomlashda kata va kichik harflar farq qiladi. cube_volume  va Cube_volume o’z garuvchilari boshqa-boshqa.
+4. C++ da maxsus ma’noga ega bo’lgan  masalan int, return, for kabi so’zlarni o’zgaruvchi nomi sifatida qo’llash mumkin emas.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/title3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="C++ da oz’garuvchini e’lon qilish."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="O’zgaruvchini e’lon qilishda dastlab o’zgaruvchi tipi yoziladi, undan so’ng o’zgaruvchi nomi yoziladi.
+	int a;
+-2 147 483 648 dan 2 147 483 647 gacha bo’lgan butun sonni saqlashi mumkin bo’lgan a deb nomlangan  o’zgaruvchi e’lon qilindi.  O’zgaruvchini tavsiflashda unga qiymat berishimiz va birnechta o’zgaruvchini birgalikda tavsiflashimiz mumkin:
+int main() {
+	int a = 10, b, c, d = 20;
+	double g = 9.81, s;
+}
+ Bunda a, b, c va int tipidagi o’zgaruvchilar tavsiflandi. a ning qiymati 10, g ning qiymati 9.81, d ning qiymati 20, b, c va s ga qiymat berilmagan.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/title4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Kiritish va Chiqarish"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="O’zgaruvchilarga qiymatni klaviatura orqali kiritish.  Bu o’zgaruvchilardan foydalanib amallar bajarish va chiqarish mumkin.
+Ikki sonning yig’indisini topadigan dastur tuzamiz. Kiruvchi o’zgaruvchilarni saqlash uchun ikkita o’zgaruvchi kerak.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/title5" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/img_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Bu dasturni ko’rib chiqamiz.
+#include iostream - kiritish chiqarish(cin, cout)bilan ishlash uchun e’lon qilinadigan kutibxona.
+using namespace std – standart kutibxonalardan foydalanganda har bir dasturda uni yozish lozim
+int a, b – a va b o’zgaruvchilarni tavsiflash
+cin a b cin – oz’garuvchilar qiymatlarini kiritish uchun xizmat qiladi. Dastlab kiritilgan sonni a o’zgaruvchi , keying kiritilgan sonni b o’zgaruvchi o’zida saqlaydi. Sonlarni probel yoki enter bilan ajratilagan holda kiritish mumkin.
+int c = a + b c  o’zgaruvchi a va b larning qiymatlari yig’indisini o’zlashtiradi. Bunda a va b larning qiymatlari o’zgarmaydi.
+cout c – c o’zgaruvchining qiymatini chiqarish.
+
+Barcha amallar yuqoridan pastga, bir qatorda chapdan o’ngga bajarilib keladi.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/image2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="C++ da matematik funksiyalar."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body6" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Matemetik funksiyalardan foydalanish uchun math.h jutibxonasini e’lon qilish lozim."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/title6" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/img_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body7" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Bo’linmaning haqiqiy qismi kerak bo’lga, agar o’zgaruvchilar butun son bo’lsa bo’lish amaliga e’tibor qaratish lozim.
+Misol. Asosining uzunligi a va balandligi h ga teng bo’lgan uchburchakning yuzasini hisoblovchi dastur tuzing.
+Yechimi.
+Kiruvchi ma’lumot a va h butun sonlari. Uchburchak yuzasi formulasi: s=ah/2.
+a va b sonlari butun, lekin s soni haqiqiy son.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/image3" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/img_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Dasturda hatolik mavjud. Bu hatolik shundan iboratki, butun sonlarni bo’lganda bo’linmaning butun qiymati hisoblanadi. Bo’linmaning haqiqiy qiymatini hisoblash uchun bo’linuvchilardan birining qiymati haqiqiy bo’lishi kerak. Yuqoridagi masalada buni
+	double s = a * h / 2.0;
+yoki
+	double s = 1.0 * a * h / 2;
+ko’rinishida yozish orqali to’girlash kiritishimiz mumkin.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/image4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Murakkab topshiriq bo’yicha na’muna:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body9" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/img_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title7" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Bunda kiruvchi ma’lumotlar x, y, z haqiqiy sonlari.
+Chiquvchi ma’lumot AF.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/image5" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/img_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body10" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/body11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="printf() funksiyasi xaqiqiy sonni nuqtadan so’ng biror xona aniqlikda chiqarish uchun hizmat qiladi.  Agar sonning qiymati 3.5689 ga teng bo’lsa yaxlitlab chiqarilganda 3.57 soni chiqariladi.
+
+Katta ifodani yozishni o’rniga uni qismlarga ajratishimiz ham mumkin:
+"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/image6" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/img_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body11" />
+
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/img_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
